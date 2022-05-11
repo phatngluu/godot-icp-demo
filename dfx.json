@@ -1,13 +1,6 @@
 {
   "canisters": {
-    "godot_decentralized_demo": {
-      "main": "src/godot_decentralized_demo/main.mo",
-      "type": "motoko"
-    },
     "godot_decentralized_demo_assets": {
-      "dependencies": [
-        "godot_decentralized_demo"
-      ],
       "frontend": {
         "entrypoint": "src/godot_decentralized_demo_assets/src/index.html"
       },
