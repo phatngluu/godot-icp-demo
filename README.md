@@ -4,6 +4,42 @@
 ### Export to web
 In Godot editor, export project to web. Please put the export location in seperate folder, eg. `dist`
 
+## Init ICP canister project
+```
+# Create ICP canister
+dfx new --frontend godot_decentralized_demo
+
+# Delete smart contract canister, also delete it in `dfx.json` - it should look like this:
+{
+  "canisters": {
+    "godot_decentralized_demo_assets": {
+      "frontend": {
+        "entrypoint": "src/godot_decentralized_demo_assets/src/index.html"
+      },
+      "source": [
+        "src/godot_decentralized_demo_assets/assets",
+        "dist/godot_decentralized_demo_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.9.3",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
+```
+
 ## Copy to the ICP canister project
 In the folder `dist`, copy only `index.html` and `index.js` to the folder `src/godot_decentralized_demo_assets/src`. Copy rest of files in `dist` to the folder `src/godot_decentralized_demo_assets/assets`
 
