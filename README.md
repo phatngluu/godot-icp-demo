@@ -4,6 +4,8 @@
 ### Export to web
 In Godot editor, export project to web. Please put the export location in seperate folder, eg. `dist`
 
+## Copy to the ICP canister project
+In the folder `dist`, copy only `index.html` and `index.js` to the folder `src/godot_decentralized_demo_assets/src`. Copy rest of files in `dist` to the folder `src/godot_decentralized_demo_assets/assets`
 
 ## Running the project locally
 
